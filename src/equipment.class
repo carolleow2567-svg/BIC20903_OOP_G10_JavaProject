@@ -1,0 +1,82 @@
+public class equipment{
+
+    //private attributes (Encapsulation)
+    private String equipmenID;
+    private String name;
+    private String brand;
+    private String condition;
+    private String status;
+    private double estimatedWeightKg;
+
+    //constructor
+    public equipment(String equipmenID, String name, String brand, String condition, String status, double estimatedWeightKg;){
+        this.equipmenID = equipmenID;
+        this.name = name;
+        this.brand = brand;
+        this.condition = condition;
+        this. status = status;
+        this.estimatedWeightKg = estimatedWeightKg;
+    }
+
+    //getter method
+    public String equipmenID () {
+        return equipmenID;
+    }
+
+    public String name () {
+        return name;
+    }
+
+    public String brand () {
+        return brand;
+    }
+
+    public String condition () {
+        return condition;
+    }
+
+    public String status () {
+        return status;
+    }
+
+    public String estimatedWeightKg () {
+        return estimatedWeightKg;
+    }
+
+    //setter method
+
+    public void String equipmenID (String equipmenID) {
+        this.equipmenID=equipmenID;
+    }
+
+    public void String name (String name) {
+        this.name=name;
+    }
+
+    public void String brand (String brand) {
+        this.brand=brand;
+    }
+
+    puclic void String condition (String condition) {
+        this.condition=condition;
+    }
+
+    puclic void String status (String status) {
+        this.status=status;
+    }
+
+    puclic void String estimatedWeightKg (String estimatedWeightKg) {
+        this.estimatedWeightKg=estimatedWeightKg;
+    }
+
+    //display method
+    public void displayDetails() {
+        System.out.println("Equipment ID: " + equipmentID);
+        System.out.println("Name: " + name);
+        System.out.println("Brand: " + brand);
+        System.out.println("Condition: " + condition);
+        System.out.println("Status: " + status);
+        System.out.println("Estimated Weight: " + estimatedWeightKg + " kg");
+    }
+
+}
