@@ -1,8 +1,10 @@
 public class Laptop extends Equipment {
 
+  // Private attributes (Encapsulation)
   private int ram;
   private int storageCapacity;
 
+  // Constructor
   public Laptop(String equipmentID, String name, String brand, String condition, String status, double estimatedWeightKg, int ram, int storageCapacity) {
     
     super(equipmentID, name, brand, condition, status, estimatedWeightKg);
@@ -11,6 +13,7 @@ public class Laptop extends Equipment {
     setStorageCapacity(storageCapacity);
   }
 
+  // Getter methods
   public int getRam() {
     return ram;
   }
@@ -19,6 +22,7 @@ public class Laptop extends Equipment {
     return storageCapacity;
   }
 
+  // Setter methods with validation
   public void setRam(int ram) {
     if (ram > 0) {
       this.ram = ram;
@@ -35,6 +39,7 @@ public class Laptop extends Equipment {
     }
   }
 
+  // Method Overriding (Polymorphism)
   @Override
   public void displayDetails() {
 
