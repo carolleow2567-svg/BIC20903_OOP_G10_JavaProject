@@ -102,7 +102,7 @@ public class SharingRecord {
         System.out.println("Member ID       : " + memberID);
         System.out.println("Equipment ID    : " + equipmentID);
         System.out.println("Borrow Date     : " + borrowDate);
-        System.out.println("Return Date     : " + (returnDate != null ? "Not returned yet" : returnDate));
+        System.out.println("Return Date     : " + (returnDate == null ? "Not returned yet" : returnDate));
         System.out.println("Status          : " + status);
         System.out.println("--------------------------------");
     }
